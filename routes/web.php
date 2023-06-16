@@ -74,7 +74,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-
+Route::get('/makanan-detail/{id}', [HomeController::class, 'show'])->name('makanan.detail');
 // Route::get('/video', function () {
 //     return view('video.index');
 // });
