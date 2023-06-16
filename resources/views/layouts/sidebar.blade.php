@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="" class="brand-link">
+  <a href="/" class="brand-link">
     <img src="" alt="" class="" style="opacity: .8">
     <span class="brand-text font-weight-light">RecipeBox</span>
   </a>

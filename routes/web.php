@@ -7,6 +7,7 @@ use App\Http\Controllers\ResepController;
 use App\Http\Controllers\VideoController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ChangePasswordController;
+use App\Http\Controllers\HomeController;
 
 // Category
 Route::get('/category', [CategoryController::class, 'index'])->name('category');
@@ -67,9 +68,12 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/home', function () {
+Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
 
 // Route::get('/video', function () {
 //     return view('video.index');
