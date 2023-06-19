@@ -26,7 +26,7 @@ Route::post('/insertresep', [ResepController::class, 'store']);
 Route::get('/editresep/{id}', [ResepController::class, 'edit']);
 Route::post('/updateresep/{id}', [ResepController::class, 'update']);
 Route::get('/deleteresep/{id}', [ResepController::class, 'destroy']);
-
+Route::get('/detailresep/{id}', [ResepController::class, 'show']);
 
 // Video
 Route::get('/video', [VideoController::class, 'index'])->name('video');
@@ -74,7 +74,6 @@ Route::get('/dashboard', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/makanan-detail/{id}', [HomeController::class, 'show'])->name('makanan.detail');
 // Route::get('/video', function () {
 //     return view('video.index');
 // });

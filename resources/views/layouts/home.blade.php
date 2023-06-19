@@ -10,7 +10,7 @@
 
  <div class="container-fluid">
   {{-- Start Nav --}}
-  <nav class="navbar navbar-expand-lg" style="background-color: burlywood">
+  <nav class="navbar navbar-expand-lg" style="background-color: deepskyblue;">
     <div class="container-fluid">
       <a class="navbar-brand" href="{{ route('home') }}">RecipeBox</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,12 +66,13 @@
       <p>Jika anda menyukai website ini silahkan berikan ulasan terbaik anda disini. Dan kami sangat menanti ulasan anda serta saran dan kritik dari anda.</p>
     </div>
     <div class="col-md-6" style="padding: 100px">
-      <img src="{{ url('img/coffee.png') }}" alt="Coffee" class="img img-fluid">
+      <img src="dist/img/makanan.jpg" alt="" class="img img-fluid">
     </div>
   </div>
   {{-- End Hero --}}
 
   {{-- Start Makanan --}}
+  <h2 class="text-center mb-3">Resep</h2>
   @yield('content')
   {{-- End Makanan --}}
 
@@ -79,38 +80,38 @@
   <div class="row mb-3" id="about">
     <h2 class="text-center mb-3">About We</h2>
     <div class="col-md-6">
-      <img src="{{ url('img/coffee.png') }}" alt="Coffee" class="img img-fluid">
-    </div>
-    <div class="col-md-6" style="padding: 20px">
-      <h4>About We</h4>
-      <p>Website ini berisi tentang berbagai resep makanan yang mudah dan praktis. Kami sengaja membuat website ini agar publik atau khalayak dapat membuat masakan yang lezat dan mudah dengan melihat resep masakan yang telah kami sajikan dalam website ini. Dan jika anda mempunyai saran atau request untuk resep masakannya di publish silahkan hubungi kontak kami. Kami sangat senang jika ada yang berpartisipasi dalam website resep masakan kami ini.</p>
-    </div>
+     <img src="dist/img/makanan.jpg" alt="" class="img img-fluid">
+   </div>
+   <div class="col-md-6" style="padding: 20px">
+    <h4>About We</h4>
+    <p>Website ini berisi tentang berbagai resep makanan yang mudah dan praktis. Kami sengaja membuat website ini agar publik atau khalayak dapat membuat masakan yang lezat dan mudah dengan melihat resep masakan yang telah kami sajikan dalam website ini. Dan jika anda mempunyai saran atau request untuk resep masakannya di publish silahkan hubungi kontak kami. Kami sangat senang jika ada yang berpartisipasi dalam website resep masakan kami ini.</p>
   </div>
-  {{-- End About --}}
+</div>
+{{-- End About --}}
 
-  {{-- Start Maps --}}
-  <div class="row mb-5 d-flex justify-content-center" id="maps">
-    <h2 class="text-center">Alamat Kami</h2>
-    <div class="col-md-12  d-flex justify-content-center">
-      <div class="card shadow">
-        <div class="card-body">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15840.82983719091!2d110.43834650000001!3d-6.9848253499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca45a9c52c3%3A0x67e7482251eedfbc!2sUniversitas%20PGRI%20Semarang!5e0!3m2!1sen!2sid!4v1684857305190!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+{{-- Start Maps --}}
+<div class="row mb-5 d-flex justify-content-center" id="maps">
+  <h2 class="text-center">Alamat Kami</h2>
+  <div class="col-md-12  d-flex justify-content-center">
+    <div class="card shadow">
+      <div class="card-body">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15840.82983719091!2d110.43834650000001!3d-6.9848253499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca45a9c52c3%3A0x67e7482251eedfbc!2sUniversitas%20PGRI%20Semarang!5e0!3m2!1sen!2sid!4v1684857305190!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
-  {{-- End Maps --}}
+</div>
+{{-- End Maps --}}
 
-  {{-- Start Footer --}}
-  <div class="row" style="background-color: burlywood; padding:15px;">
-    <div class="col-md-12 d-flex justify-content-center">
-      <a href="#" class="me-3"><i class="fa-brands fa-whatsapp fs-2"></i></a>
-      <a href="#" class="me-3"><i class="fa-regular fa-envelope fs-2"></i></a>
-      <a href="#" class="me-3"><i class="fa-brands fa-instagram fs-2"></i></a>
-      <a href="#" class="me-3"><i class="fa-solid fa-phone-volume fs-4 mt-1"></i></a>
-    </div>
+{{-- Start Footer --}}
+<div class="row" style="background-color: deepskyblue; padding:15px;">
+  <div class="col-md-12 d-flex justify-content-center">
+    <a href="#" class="me-3"><i class="fa-brands fa-whatsapp fs-2 text-dark"></i></a>
+    <a href="#" class="me-3"><i class="fa-regular fa-envelope fs-2 text-dark"></i></a>
+    <a href="#" class="me-3"><i class="fa-brands fa-instagram fs-2 text-dark"></i></a>
+    <a href="#" class="me-3"><i class="fa-solid fa-phone-volume fs-4 mt-1 text-dark"></i></a>
   </div>
-  {{-- End Footer --}}
+</div>
+{{-- End Footer --}}
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/e7f5845a19.js" crossorigin="anonymous"></script>

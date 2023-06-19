@@ -73,7 +73,8 @@ class ResepController extends Controller
      */
     public function show($id)
     {
-        //
+        $resep = Resep::findOrFail($id);
+        return view('resep.detail', compact('resep'));
     }
 
     /**
@@ -121,15 +122,22 @@ class ResepController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+ * Remove the specified resource from storage.
+ *
+ * @param  int  $id
+ * @return \Illuminate\Http\Response
+ */
     public function destroy($id)
     {
-        $data = Resep::find($id);
-        $data->delete();
-        return redirect()->route('resep')->with('success', 'Resep has been updated successfully');
+        $resep = Resep::find($id);
+
+    // Periksa apakah pengguna saat ini adalah pemilik resep
+        if ($resep->id_user != Auth::user()->id) {
+            return redirect()->route('resep')->with('error', 'You do not have permission to delete this recipe.');
+        }
+
+        $resep->delete();
+        return redirect()->route('resep')->with('success', 'Recipe has been deleted successfully');
     }
+
 }

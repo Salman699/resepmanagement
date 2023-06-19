@@ -40,8 +40,9 @@
                     <img src="/resep_images/{{ $row->images }}" width="100" alt="">
                 </td>
                 <td>
-                    <a href="/editresep/{{$row->id}}" class="btn btn-outline-warning"> <i class="fa-regular fa-pen-to-square"></i></a>
+                    <a href="/editresep/{{$row->id}}" class="btn btn-outline-warning"><i class="fa-regular fa-pen-to-square"></i></a>
                     <a href="/deleteresep/{{$row->id}}" class="btn btn-outline-danger" onclick="return confirm('Confirm to delete data?')"><i class="fa-solid fa-trash"></i></a>
+                    <a href="detail/{{$row->id}}" class="btn btn-outline-primary"><i class="fa-regular fa-info-circle"></i></a> <!-- Added detail button -->
                 </td>
             </tr>
             @endforeach
