@@ -11,7 +11,7 @@ $role = Auth::user()-> role ?? null
 
 @if($role == 'admin')
 
-<a href="/createuser" class="btn btn-outline-primary mb-2 disabled"> Add user </a>
+<!-- <a href="/createuser" class="btn btn-outline-primary mb-2 disabled"> Add user </a> -->
 
 @if ($message = Session::get('success'))
 <div class="alert alert-success">

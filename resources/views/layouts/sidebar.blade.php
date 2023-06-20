@@ -54,14 +54,14 @@
           </a>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="/video" class="nav-link">
             <i class="fa-solid fa-video"></i>
             <p>
               Video
             </p>
           </a>
-        </li>
+        </li> -->
 
         <!-- @php
         $id=Auth::user()-> id ?? null
@@ -112,7 +112,7 @@
 
         <li class="nav-item">
           <a href="/setting/{{$id}}" class="nav-link">
-            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-cog"></i>
             <p>
               Setting
             </p>
@@ -121,7 +121,7 @@
 
         <li class="nav-item">
           <a href="/change-password" class="nav-link">
-            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-key"></i>
             <p>
               Change password
             </p>

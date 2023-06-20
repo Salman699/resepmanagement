@@ -16,13 +16,6 @@
             <div class="card-body">
                 <h5 class="card-title">{{ $row->title }}</h5>
                 <p class="card-text">{{ $row->resep }}</p>
-                <a href="/editresep/{{$row->id}}" class="btn btn-outline-warning">Edit</a>
-                
-                @if ($row->id_user == Auth::user()->id)
-                <a href="/deleteresep/{{$row->id}}" class="btn btn-outline-danger" onclick="return confirm('Confirm to delete data?')">Delete</a>
-                @endif
-                
-                <a href="/detail/{{$row->id}}" class="btn btn-outline-primary">Detail</a>
             </div>
         </div>
     </div>
@@ -36,13 +29,6 @@
             <div class="card-body">
                 <h5 class="card-title">{{ $row->title }}</h5>
                 <p class="card-text">{{ $row->resep }}</p>
-                <a href="/editresep/{{$row->id}}" class="btn btn-outline-warning">Edit</a>
-                
-                @if ($row->id_user == Auth::user()->id)
-                <a href="/deleteresep/{{$row->id}}" class="btn btn-outline-danger" onclick="return confirm('Confirm to delete data?')">Delete</a>
-                @endif
-                
-                <a href="/detail/{{$row->id}}" class="btn btn-outline-primary">Detail</a>
             </div>
         </div>
     </div>
@@ -74,7 +60,6 @@
         });
     });
 </script>
-
 @endpush
 
 @endsection

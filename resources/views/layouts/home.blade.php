@@ -19,7 +19,7 @@
      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
        <div class="navbar-nav ms-auto">
          <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
-         <a class="nav-link" href="#makanan">Makanan</a>
+         <a class="nav-link" href="#resep">Resep</a>
          <a class="nav-link" href="#about">About</a>
          <a class="nav-link" href="#maps">Maps</a>
          <div class="nav-item dropdown">
@@ -72,7 +72,7 @@
   {{-- End Hero --}}
 
   {{-- Start Makanan --}}
-  <h2 class="text-center mb-3">Resep</h2>
+  <h2 class="text-center mb-3" id="resep">Resep</h2>
   @yield('content')
   {{-- End Makanan --}}
 
