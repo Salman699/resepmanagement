@@ -36,7 +36,7 @@
               <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#makanan">Makanan</a>
+              <a class="nav-link" href="#resep">Resep</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#maps">Maps</a>
@@ -106,21 +106,32 @@
   {{-- End Hero --}}
 
   {{-- Start Makanan --}}
-  <h2 class="text-center mb-3">Resep</h2>
+  <section class="product style-2 padding-tb" style="background-color:antiquewhite" id="resep">
+  <div class="col-12 py-4 text-center">
+        <div class="container">
+      <div class="section-header">
+        <img src="resep_images/book.png" style="width: 46px;" alt="sc-img" class="header-img">
+        <span style="font-size: 27pt; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Resep</span>
+      </div>
+    </div>
+  </div>
+  </section>
   @yield('content')
   {{-- End Makanan --}}
 
   {{-- Start About --}}
+  <section class="product style-2 padding-tb" style="background-image: url(resep_images/about9.jpg); background-repeat:no-repeat; background-size:cover; padding: 100px;" id="about">
   <div class="row mb-3" id="about">
-    <h2 class="text-center mb-3">About We</h2>
+    <h1 class="text-center mb-3" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:35pt;">About Us</h1>
     <div class="col-md-6">
-      <img src="dist/img/makanan.jpg" alt="" class="img img-fluid">
+      <img src="resep_images/01.png" alt="" class="img img-fluid">
     </div>
-    <div class="col-md-6" style="padding: 20px">
-      <h4>About We</h4>
-      <p>Website ini berisi tentang berbagai resep makanan yang mudah dan praktis. Kami sengaja membuat website ini agar publik atau khalayak dapat membuat masakan yang lezat dan mudah dengan melihat resep masakan yang telah kami sajikan dalam website ini. Dan jika anda mempunyai saran atau request untuk resep masakannya di publish silahkan hubungi kontak kami. Kami sangat senang jika ada yang berpartisipasi dalam website resep masakan kami ini.</p>
+    <div class="col-md-6" style="padding: 100px">
+      <p style="text-align: justify; font-family:cursive">Website ini berisi tentang berbagai resep makanan yang mudah dan praktis. Kami sengaja membuat website ini agar publik atau khalayak dapat membuat masakan yang lezat dan mudah dengan melihat resep masakan yang telah kami sajikan dalam website ini. Dan jika anda mempunyai saran atau request untuk resep masakannya di publish silahkan hubungi kontak kami. Kami sangat senang jika ada yang berpartisipasi dalam website resep masakan kami ini.</p>
     </div>
   </div>
+  </div>
+  </section>
   {{-- End About --}}
 
   {{-- Start Maps --}}
@@ -155,14 +166,7 @@
           <p>
             <a href="/recipes/about" class="text-white" style="text-decoration: none; font-size:14px">About Us..</a>
           </p>
-
         </div>
-        <!-- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px;">Uselful Link</h5>
-                        <p>
-                            <a href="#" class="text-white" style="text-decoration: none; font-size:14px">TheProviders</a>
-                        </p>
-                    </div> -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning" style="text-align: left; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px;">Contact</h5>
           <p style="text-align: left; font-size:14px">
