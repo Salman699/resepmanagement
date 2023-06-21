@@ -38,28 +38,7 @@
     $count++;
     @endphp
     @endforeach
-
-    @if ($showMore)
-    <div class="col-md-12 mt-3" id="moreButtonContainer">
-        <button class="btn btn-secondary btn-block" id="moreButton">More</button>
-    </div>
-    @endif
 </div>
 
-@push('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var cardContainers = document.querySelectorAll('.row');
-        cardContainers.forEach(function(cardContainer) {
-            cardContainer.addEventListener('click', function(event) {
-                var cardDetail = event.target.closest('.card');
-                if (cardDetail) {
-                    cardDetail.classList.toggle('card-detail');
-                }
-            });
-        });
-    });
-</script>
-@endpush
 
 @endsection
