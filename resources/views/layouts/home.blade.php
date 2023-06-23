@@ -91,7 +91,7 @@
         <div class="col-lg-6 col-12">
           <div class="about-content">
             <div class="section-header">
-              <span>Welcome RecipesBox</span>
+              <h1>Welcome RecipesBox</h1>
               <h1>Selamat Datang Di Resep Makanan Kami</h1>
             </div>
             <div class="section-wrapper">
@@ -107,48 +107,52 @@
 
   {{-- Start Makanan --}}
   <section class="product style-2 padding-tb" style="background-color:antiquewhite" id="resep">
-  <div class="col-12 py-4 text-center">
-        <div class="container">
-      <div class="section-header">
-        <img src="resep_images/book.png" style="width: 46px;" alt="sc-img" class="header-img">
-        <span style="font-size: 27pt; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Resep</span>
+    <div class="col-12 py-4 text-center">
+      <div class="container">
+        <div class="section-header">
+          <img src="resep_images/book.png" style="width: 46px;" alt="sc-img" class="header-img">
+          <span style="font-size: 27pt; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Resep</span>
+        </div>
       </div>
     </div>
-  </div>
   </section>
   @yield('content')
   {{-- End Makanan --}}
 
   {{-- Start About --}}
   <section class="product style-2 padding-tb" style="background-image: url(resep_images/about9.jpg); background-repeat:no-repeat; background-size:cover; padding: 100px;" id="about">
-  <div class="row mb-3" id="about">
-    <h1 class="text-center mb-3" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:35pt;">About Us</h1>
-    <div class="col-md-6">
-      <img src="resep_images/01.png" alt="" class="img img-fluid">
+    <div class="row mb-3" id="about">
+      <h1 class="text-center mb-3" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:35pt;">About Us</h1>
+      <div class="col-md-6">
+        <img src="resep_images/01.png" alt="" class="img img-fluid">
+      </div>
+      <div class="col-md-6" style="padding: 100px">
+        <p style="text-align: justify; font-family:cursive">Website ini berisi tentang berbagai resep makanan yang mudah dan praktis. Kami sengaja membuat website ini agar publik atau khalayak dapat membuat masakan yang lezat dan mudah dengan melihat resep masakan yang telah kami sajikan dalam website ini. Dan jika anda mempunyai saran atau request untuk resep masakannya di publish silahkan hubungi kontak kami. Kami sangat senang jika ada yang berpartisipasi dalam website resep masakan kami ini.</p>
+      </div>
     </div>
-    <div class="col-md-6" style="padding: 100px">
-      <p style="text-align: justify; font-family:cursive">Website ini berisi tentang berbagai resep makanan yang mudah dan praktis. Kami sengaja membuat website ini agar publik atau khalayak dapat membuat masakan yang lezat dan mudah dengan melihat resep masakan yang telah kami sajikan dalam website ini. Dan jika anda mempunyai saran atau request untuk resep masakannya di publish silahkan hubungi kontak kami. Kami sangat senang jika ada yang berpartisipasi dalam website resep masakan kami ini.</p>
     </div>
-  </div>
-  </div>
   </section>
   {{-- End About --}}
 
   {{-- Start Maps --}}
-  <div class="row mb-5 d-flex justify-content-center" id="maps">
-    <h2 class="text-center">Alamat Kami</h2>
-    <div class="col-md-12  d-flex justify-content-center">
-      <div class="card shadow">
-        <div class="card-body">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15840.82983719091!2d110.43834650000001!3d-6.9848253499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca45a9c52c3%3A0x67e7482251eedfbc!2sUniversitas%20PGRI%20Semarang!5e0!3m2!1sen!2sid!4v1684857305190!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section class="product style-2 padding-tb" style="background-image: url(resep_images/maps.png); background-repeat:no-repeat; background-size:cover; padding: 100px;" id="about">
+    <div class="row mb-3" id="about">
+      <h1 class="text-center mb-3" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:35pt;">Alamat Kami</h1>
+      <div class="row mb-5 d-flex justify-content-center" id="maps">
+        <div class="col-md-12  d-flex justify-content-center">
+          <div class="card shadow">
+            <div class="card-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15840.82983719091!2d110.43834650000001!3d-6.9848253499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708ca45a9c52c3%3A0x67e7482251eedfbc!2sUniversitas%20PGRI%20Semarang!5e0!3m2!1sen!2sid!4v1684857305190!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   {{-- End Maps --}}
 
   {{-- Start Footer --}}
-  <footer class="text-white pt-3 pb-4" style="background-color:indianred;">
+  <footer class="text-white pt-3 pb-4" style="background-color:peru">
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
         <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -190,7 +194,7 @@
               <input class="rounded-l-[5px] bg-[#f6fcff] w-full md:w-[190.01px] h-[55px] border border-white text-[#404040]" type="email" name="" id="wa-custom">
               <!-- <button onclick="document.location.href='#" class="w-[50.09px] rounded-r-[5px] h-[55px] mb-5 md:mb-0 bg-[#a1b0c7] border border-white px-[13px]">
                                     <img loading="lazy" class="w-[28px] h-[28px]" src="/assets/images/wa.svg">
-                                </button> -->
+                                  </button> -->
             </li>
           </ul>
         </div>
@@ -200,7 +204,7 @@
         <div class="col-md-7 col-lg-8">
           <p style="font-size:15px">
             &copy; <?php echo date("Y"); ?> RecipeBox |
-            <a class="link-github" href="https://github.com/Salman699/RecipeBox" target="_blank">
+            <a class="link-github" href="https://github.com/Salman699/resepmanagement.git" target="_blank">
               <strong class="text-warning">Github <img class="icon-github" src="{{asset('resep_images/icon-github.png')}}" style="width: 2.5%;" />
               </strong>
 

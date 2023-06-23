@@ -54,14 +54,14 @@
           </a>
         </li>
 
-        <li class="nav-item">
+      <!--   <li class="nav-item">
           <a href="/video" class="nav-link">
             <i class="fa-solid fa-video"></i>
             <p>
               Video
             </p>
           </a>
-        </li>
+        </li> -->
 
         <!-- @php
         $id=Auth::user()-> id ?? null
@@ -96,14 +96,14 @@
           </a>
         </li>
 
-        <li class="nav-item">
+       <!--  <li class="nav-item">
           <a href="/video" class="nav-link">
             <i class="fa-solid fa-video"></i>
             <p>
               Video
             </p>
           </a>
-        </li>
+        </li> -->
         @endif
 
         @php
