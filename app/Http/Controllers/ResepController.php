@@ -73,7 +73,14 @@ class ResepController extends Controller
      */
     public function show($id)
     {
+<<<<<<< HEAD
         $resep = Resep::findOrFail($id);
+=======
+    // Ambil data resep berdasarkan ID
+        $resep = Resep::find($id);
+
+    // Return view detail resep dengan data resep yang telah diambil
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
         return view('resep.detail', compact('resep'));
     }
 

@@ -17,4 +17,8 @@ function remcl(){
 inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56

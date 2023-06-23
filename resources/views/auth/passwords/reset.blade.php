@@ -20,9 +20,15 @@
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
+<<<<<<< HEAD
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
+=======
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
                                 @enderror
                             </div>
                         </div>
@@ -34,9 +40,15 @@
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                                 @error('password')
+<<<<<<< HEAD
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
+=======
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
                                 @enderror
                             </div>
                         </div>

@@ -26,7 +26,15 @@ Route::post('/insertresep', [ResepController::class, 'store']);
 Route::get('/editresep/{id}', [ResepController::class, 'edit']);
 Route::post('/updateresep/{id}', [ResepController::class, 'update']);
 Route::get('/deleteresep/{id}', [ResepController::class, 'destroy']);
+<<<<<<< HEAD
 Route::get('/detailresep/{id}', [ResepController::class, 'show']);
+=======
+Route::get('/detail/{id}', [ResepController::class, 'show'])->name('detail');
+Route::post('/update/resep/{id}', [ResepController::class, 'update'])->name('resep.update');
+Route::get('/resep', [ResepController::class, 'index'])->name('resep.index');
+
+
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 
 // Video
 Route::get('/video', [VideoController::class, 'index'])->name('video');

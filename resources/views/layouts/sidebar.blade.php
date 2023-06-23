@@ -79,7 +79,11 @@
         @else
 
         <li class="nav-item">
+<<<<<<< HEAD
           <a href="/home" class="nav-link">
+=======
+          <a href="/dashboard" class="nav-link">
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
             <i class="fa-solid fa-list-ul"></i>
             <p>
               Dashboard

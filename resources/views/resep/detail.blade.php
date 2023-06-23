@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts.main')
 
 @section('title', 'Detail Resep')
@@ -76,10 +77,33 @@
            </div>
       </form>
  </div>
+=======
+@extends('layouts.home')
+
+@section('title', 'Home | Detail Makanan')
+
+@section('content')
+<div class="container">
+ <div class="row">
+  <div class="col-md-12">
+   <div class="card">
+    <div class="card-body">
+     @if ($resep->Category)
+     <h5 class="card-title">Kategori: {{ $resep->Category->name }}</h5>
+     @else
+     <h5 class="card-title">Kategori: Tidak ada kategori</h5>
+     @endif
+     <h5 class="card-title">Judul: {{ $resep->title }}</h5>
+     <p class="card-text">Resep: {{ $resep->resep }}</p>
+     <img src="/resep_images/{{ $resep->images }}" class="card-img-top" alt="">
+</div>
+</div>
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 </div>
 </div>
 </div>
 @endsection
+<<<<<<< HEAD
 
 <div class="mb-2 col-6">
     <label class="form-label">Judul</label>
@@ -107,3 +131,5 @@
 </div>
 </div>
 @endsection
+=======
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56

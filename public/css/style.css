@@ -5,8 +5,13 @@
 }
 
 body{
+<<<<<<< HEAD
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
+=======
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 }
 
 .wave{
@@ -18,12 +23,21 @@ body{
 }
 
 .container{
+<<<<<<< HEAD
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap :7rem;
     padding: 0 2rem;
+=======
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap :7rem;
+	padding: 0 2rem;
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 }
 
 .img{
@@ -48,7 +62,11 @@ form{
 }
 
 .login-content img{
+<<<<<<< HEAD
     height: 100px;
+=======
+	height: 100px;
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 }
 
 .login-content h2{
@@ -60,11 +78,19 @@ form{
 
 .login-content .input-div{
 	position: relative;
+<<<<<<< HEAD
     display: grid;
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0;
     border-bottom: 2px solid #d9d9d9;
+=======
+	display: grid;
+	grid-template-columns: 7% 93%;
+	margin: 25px 0;
+	padding: 5px 0;
+	border-bottom: 2px solid #d9d9d9;
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 }
 
 .login-content .input-div.one{
@@ -83,7 +109,11 @@ form{
 }
 
 .input-div > div{
+<<<<<<< HEAD
     position: relative;
+=======
+	position: relative;
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 	height: 45px;
 }
 
@@ -194,8 +224,13 @@ a:hover{
 	}
 
 	.login-content h2{
+<<<<<<< HEAD
         font-size: 2.4rem;
         margin: 8px 0;
+=======
+		font-size: 2.4rem;
+		margin: 8px 0;
+>>>>>>> b3b440541589a093f123d135e0380c5aabe7be56
 	}
 
 	.img img{
