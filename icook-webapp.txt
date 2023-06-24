@@ -1,0 +1,5 @@
+1. Run npm install && npm run dev on terminal before going to login page
+2. Import the 'icook' database from the folder mysql_db
+3. For login attempt, use any one of the username from the database:
+E.g: username : user@gmail.com, password: 12345678
+     username : admin@gmail.com, password: 12345678
