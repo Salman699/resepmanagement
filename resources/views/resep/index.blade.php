@@ -18,7 +18,7 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Id_category</th>
+                <th>Kategori</th>
                 <th>Judul</th>
                 <th>Resep</th>
                 <th>Images</th>

@@ -34,9 +34,9 @@ class HomeController extends Controller
      */
    public function index()
    {
-       $resep = Resep::all();
-       return view('home', compact('resep'));
-   }
+     $resep = Resep::all();
+     return view('home', compact('resep'));
+ }
     /**
      * Show the form for creating a new resource.
      *

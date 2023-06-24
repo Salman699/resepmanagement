@@ -10,6 +10,7 @@
         <div class="login-content">
             <form method="POST" action="{{ route('register') }}">
                 @csrf
+                <input type="hidden" value="user" name="role">
                 <img src="img/avatar.svg">
                 <h2 class="title">Register</h2>
                 <div class="input-div one">

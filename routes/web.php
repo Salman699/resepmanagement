@@ -28,7 +28,6 @@ Route::post('/updateresep/{id}', [ResepController::class, 'update']);
 Route::get('/deleteresep/{id}', [ResepController::class, 'destroy']);
 Route::get('/detail/{id}', [ResepController::class, 'show'])->name('detail');
 Route::post('/update/resep/{id}', [ResepController::class, 'update'])->name('resep.update');
-Route::get('/resep', [ResepController::class, 'index'])->name('resep.index');
 
 
 
@@ -45,6 +44,7 @@ Route::get('/deletevideo/{id}', [VideoController::class, 'destroy']);
 Route::get('/user', [UserController::class, 'index'])->name('user');
 Route::get('/edituser/{id}', [UserController::class, 'edit']);
 Route::post('/updateuser/{id}', [UserController::class, 'update']);
+Route::get('/deleteuser/{id}', [UserController::class, 'destroy']);
 
 Route::get('/setting/{id}', [UserController::class, 'setting']);
 Route::post('/updatesetting/{id}', [UserController::class, 'updatesetting']);
@@ -77,6 +77,9 @@ Route::get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 
 // Route::get('/video', function () {
 //     return view('video.index');

@@ -112,7 +112,7 @@
 
         <li class="nav-item">
           <a href="/setting/{{$id}}" class="nav-link">
-            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-cog"></i>
             <p>
               Setting
             </p>
@@ -121,7 +121,7 @@
 
         <li class="nav-item">
           <a href="/change-password" class="nav-link">
-            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-key"></i>
             <p>
               Change password
             </p>

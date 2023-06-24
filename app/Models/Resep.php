@@ -12,11 +12,11 @@ class Resep extends Model
     protected $table = 'reseps'; // Nama tabel yang terkait dengan model
 
     protected $fillable = [
-        'title', 'resep', 'images', 'id_categories'
+        'title', 'resep', 'images', 'id_category'
     ];
 
     public function category()
     {
-        return $this->belongsTo(Categories::class, 'id_categories');
+        return $this->belongsTo(Categories::class, 'id_category');
     }
 }

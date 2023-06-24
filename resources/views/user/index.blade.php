@@ -11,7 +11,7 @@ $role = Auth::user()-> role ?? null
 
 @if($role == 'admin')
 
-<a href="/createuser" class="btn btn-outline-primary mb-2 disabled"> Add user </a>
+<!-- <a href="/createuser" class="btn btn-outline-primary mb-2 disabled"> Add user </a> -->
 
 @if ($message = Session::get('success'))
 <div class="alert alert-success">
@@ -48,7 +48,7 @@ $role = Auth::user()-> role ?? null
                     <td> {{ $row-> role }} </td>
                     <td>
                         <a href="/edituser/{{$row->id}}" class="btn btn-outline-warning"> <i class="fa-regular fa-pen-to-square"></i></a>
-                        <a href="/deletevideo/{{$row->id}}" class="btn btn-outline-danger" onclick="return confirm('Confirm to delete data?')"><i class="fa-solid fa-trash"></i></a>
+                        <a href="/deleteuser/{{$row->id}}" class="btn btn-outline-danger" onclick="return confirm('Confirm to delete data?')"><i class="fa-solid fa-trash"></i></a>
                     </td>
                 </tr>
                 @endforeach

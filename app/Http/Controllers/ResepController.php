@@ -140,7 +140,8 @@ class ResepController extends Controller
         }
 
         $resep->delete();
-        return redirect()->route('resep')->with('success', 'Recipe has been deleted successfully');
+        return redirect('/resep')->with('success', 'Recipe has been deleted successfully');
     }
+
 
 }

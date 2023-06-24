@@ -42,4 +42,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    // Di dalam class UserController
+
+/**
+ * Check if the user has admin role.
+ *
+ * @return bool
+ */
+private function isAdmin()
+{
+    return Auth::user()->role == 'admin';
+}
+
 }

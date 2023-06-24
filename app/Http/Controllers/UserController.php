@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class UserController extends Controller
 {
@@ -17,6 +19,12 @@ class UserController extends Controller
         $user = User::get();
         return view('user.index', compact('user'));
     }
+    public function isAdmin()
+    {
+        $user = Auth::user();
+        return $user->role === 'admin';
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -108,6 +116,24 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        if (!$this->isAdmin()) {
+            return redirect()->route('user')->with('error', 'You do not have permission to delete users.');
+        }
+
+        $user = User::findOrFail($id);
+
+    // Lakukan pemeriksaan tambahan jika diperlukan sebelum menghapus pengguna
+    // Misalnya, jika Anda ingin melarang pengguna menghapus akun mereka sendiri
+    // Anda dapat menambahkan kondisi berikut sebelum menghapus pengguna:
+    /*
+    if ($user->id == Auth::user()->id) {
+        return redirect()->route('user')->with('error', 'You do not have permission to delete your own account.');
     }
+    */
+
+    $user->delete();
+
+    return redirect()->route('user')->with('success', 'User has been deleted successfully');
+}
+
 }
