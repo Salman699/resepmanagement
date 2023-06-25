@@ -6,7 +6,7 @@
 
 @section('content')
 
-<form method="POST" action="/insertresep">
+<form method="POST" action="/insertresep" enctype="multipart/form-data">
 
     @csrf
 

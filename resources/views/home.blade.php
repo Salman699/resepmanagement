@@ -5,11 +5,11 @@
 @section('content')
 <div class="row">
     @foreach ($resep as $row)
-    <div class="col-md-4 mb-6">
+    <div class="col-md-3 mb-6">
         <div class="card card-detail">
             <!-- Hapus baris berikut yang menampilkan gambar -->
-            <img src="/resep_images/{{ $row->images }}" class="card-img-top" alt="">
-            <div class="card-body">
+            <img src="/resep_images/{{ $row->images }}" class="card-img-top" alt="" style="height: 230px;">
+            <div class="card-body" style="width: 75%;">
                 <h5 class="card-title">{{ $row->title }}</h5>
                 <!-- Hapus baris berikut yang menampilkan deskripsi resep -->
                 <!-- <p class="card-text">{{ $row->resep }}</p> -->

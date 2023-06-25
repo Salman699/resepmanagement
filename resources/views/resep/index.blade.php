@@ -37,7 +37,7 @@
                 <td> {{$row -> title}} </td>
                 <td> {{$row -> resep}} </td>
                 <td>
-                    <img src="/resep_images/{{ $row->images }}" width="100" alt="">
+                    <img src="{{ asset('resep_images/'.$row->images) }}" width="100"  alt="">
                 </td>
                 <td>
                     <a href="/editresep/{{$row->id}}" class="btn btn-outline-warning"><i class="fa-regular fa-pen-to-square"></i></a>
