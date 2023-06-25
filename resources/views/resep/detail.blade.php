@@ -35,8 +35,8 @@
                     </div>
                </div>
                <div class="d-grid gap-2 d-md-block">
-               <a href="{{ route('resep') }}" class="btn btn-primary btn-md">Back</a>
-                         </div>
+                    <a href="{{ route('home') }}" class="btn btn-primary btn-md">Back</a>
+               </div>
           </div>
      </div>
 

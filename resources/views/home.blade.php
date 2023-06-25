@@ -5,7 +5,7 @@
 @section('content')
 <div class="row">
     @foreach ($resep as $row)
-    <div class="col-md-4 mb-3">
+    <div class="col-md-3 mb-6">
         <div class="card card-detail">
             <img src="/resep_images/{{ $row->images }}" class="card-img-top" alt="">
             <div class="card-body">
