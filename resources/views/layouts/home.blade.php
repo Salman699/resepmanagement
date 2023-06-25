@@ -10,9 +10,9 @@
 
 <body>
 
- <!-- Navbar -->
- @include('layouts.fe_navbar')
-    <!-- /.navbar -->
+  <!-- Navbar -->
+  @include('layouts.fe_navbar')
+  <!-- /.navbar -->
 
   {{-- Start Hero --}}
   <section class="about padding-tb" style="background-image: url(resep_images/bg.png); background-repeat:no-repeat; background-size:cover; padding: 100px;">
@@ -26,12 +26,15 @@
         <div class="col-lg-6 col-12">
           <div class="about-content">
             <div class="section-header">
-              <h1>Welcome RecipesBox</h1>
-              <h1>Selamat Datang Di Resep Makanan Kami</h1>
+              <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:36pt">Welcome RecipesBox</h1>
+              <h1 style="font-family:cursive; font-size:23pt">Selamat Datang Di Resep Makanan Kami</h1>
             </div>
-            <div class="section-wrapper">
-              <p>Website ini menyediakan berbagai macam resep makanan, dari mulai makanan yang berjenis berat hingga yang ringan.</p>
+            <div class="section-wrapper" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              <p> Website ini menyediakan berbagai macam resep makanan, dari mulai makanan yang berjenis berat hingga yang ringan.</p>
               <p>Jika anda menyukai website ini silahkan berikan ulasan terbaik anda disini. Dan kami sangat menanti ulasan anda serta saran dan kritik dari anda.</p>
+            </div>
+            <div class="d-grid gap-2 d-md-block">
+              <a href="#" class="btn btn-warning btn-lg" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Ulasan...</a>
             </div>
           </div>
         </div>
@@ -82,11 +85,11 @@
   </div>
   {{-- End Maps --}}
 
-   <!-- Footer -->
-   @include('layouts.fe_footer')
-    <!-- /.Footer -->
+  <!-- Footer -->
+  @include('layouts.fe_footer')
+  <!-- /.Footer -->
 
-  
+
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e7f5845a19.js" crossorigin="anonymous"></script>

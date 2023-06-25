@@ -12,10 +12,10 @@
                     <a href="/" class="text-white" style="text-decoration: none; font-size:14px">Home..</a>
                 </p>
                 <p>
-                    <a href="/recipes-all" class="text-white" style="text-decoration: none; font-size:14px">Recipe..</a>
+                    <a href="#resep" class="text-white" style="text-decoration: none; font-size:14px">Recipe..</a>
                 </p>
                 <p>
-                    <a href="/recipes/about" class="text-white" style="text-decoration: none; font-size:14px">About Us..</a>
+                    <a href="#about" class="text-white" style="text-decoration: none; font-size:14px">About Us..</a>
                 </p>
             </div>
             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
