@@ -10,74 +10,9 @@
 
 <body>
 
-  {{-- Start Nav --}}
-  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-    <div class="container">
-      <!-- Logo  -->
-      <a class="navbar-brand fs-4" href="#">RecipesBox</a>
-      <!-- Toggle Btn -->
-      <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Sidebar -->
-      <div class=" sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <!-- Sidebar Header -->
-        <div class="offcanvas-header text-whitw border-bottom">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RecipesBox</h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <!-- Sidebar Body  -->
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item mx-2">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#resep">Resep</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#maps">Maps</a>
-            </li>
-          </ul>
-          <!-- Login-->
-          <div class="d-flex justify-content-center align-items-center gap-3">
-            <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                @guest
-                Login
-                @else
-                {{ Auth::user()->name }}
-                @endguest
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                <li><a class="dropdown-item" href="{{ route('dashboard') }}">Dashboard</a></li>
-                @guest
-                <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
-                <li><a class="dropdown-item" href="{{ route('register') }}">Register</a>
-                  @endguest
-
-                  @auth
-                <li>
-                  <form action="{{ route('logout') }}" method="POST" style="display: inline;">
-                    @csrf
-                    @method('POST')
-                    <button type="submit" class="dropdown-item">Logout</button>
-                  </form>
-                </li>
-                @endauth
-
-                <!-- Add more profile-related links if needed -->
-              </ul>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </nav>
-  {{-- End Nav --}}
+ <!-- Navbar -->
+ @include('layouts.fe_navbar')
+    <!-- /.navbar -->
 
   {{-- Start Hero --}}
   <section class="about padding-tb" style="background-image: url(resep_images/bg.png); background-repeat:no-repeat; background-size:cover; padding: 100px;">
@@ -147,91 +82,11 @@
   </div>
   {{-- End Maps --}}
 
-  {{-- Start Footer --}}
-  <footer class="text-white pt-3 pb-4" style="background-color:mediumseagreen">
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px;">RecipesBox</h5>
-          <p style="text-align:justify; font-size:14px">RecipesBox memberikan pengalaman terbaik dalam menghidangkan makanan, pilih dan temukan resep hidanganmu...</p>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3" style="text-align: justify;">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px;">Category</h5>
-          <p>
-            <a href="/" class="text-white" style="text-decoration: none; font-size:14px">Home..</a>
-          </p>
-          <p>
-            <a href="/recipes-all" class="text-white" style="text-decoration: none; font-size:14px">Recipe..</a>
-          </p>
-          <p>
-            <a href="/recipes/about" class="text-white" style="text-decoration: none; font-size:14px">About Us..</a>
-          </p>
-        </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning" style="text-align: left; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px;">Contact</h5>
-          <p style="text-align: left; font-size:14px">
-            <i class="fas fa-home mr-3"></i>&nbsp;Indonesian, 876
-          </p>
-          <p style="text-align: left; font-size:14px">
-            <i class="fas fa-envelope mr-3"></i>&nbsp;recipesbox@gmail.com
-          </p>
-          <p style="text-align: left; font-size:14px">
-            <i class="fas fa-phone mr-3"></i>&nbsp;+62-(811)-(5628)
-          </p>
-          <p style="text-align: left; font-size:14px">
-            <i class="fas fa-print mr-3"></i>&nbsp;recipesbox
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size:18px;">Bingung.....?</h5>
-          <ul class="list-unstyled list-inline">
-            <p style="font-size:14px; text-align:center;">Kirim Pesan ke Admin</p>
-            <li class="flex flex-row">
-              <input class="rounded-l-[5px] bg-[#f6fcff] w-full md:w-[190.01px] h-[55px] border border-white text-[#404040]" type="email" name="" id="wa-custom">
-              <!-- <button onclick="document.location.href='#" class="w-[50.09px] rounded-r-[5px] h-[55px] mb-5 md:mb-0 bg-[#a1b0c7] border border-white px-[13px]">
-                                    <img loading="lazy" class="w-[28px] h-[28px]" src="/assets/images/wa.svg">
-                                  </button> -->
-            </li>
-          </ul>
-        </div>
-      </div>
-      <hr class="mb-4">
-      <div class="row align-items-center">
-        <div class="col-md-7 col-lg-8">
-          <p style="font-size:15px">
-            &copy; <?php echo date("Y"); ?> RecipeBox |
-            <a class="link-github" href="https://github.com/Salman699/RecipeBox" target="_blank">
-              <strong class="text-warning">Github <img class="icon-github" src="{{asset('resep_images/icon-github.png')}}" style="width: 2.5%;" />
-              </strong>
+   <!-- Footer -->
+   @include('layouts.fe_footer')
+    <!-- /.Footer -->
 
-            </a>
-          </p>
-        </div>
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-right">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 15px;"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 15px;"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 15px;"><i class="fab fa-google-plus"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 15px;"><i class="fab fa-linkedin-in"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 15px;"><i class="fab fa-youtube"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  {{-- End Footer --}}
+  
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e7f5845a19.js" crossorigin="anonymous"></script>
