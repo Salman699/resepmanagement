@@ -13,31 +13,33 @@
      @include('layouts.fe_navbar')
      <!-- /.navbar -->
 
-<br><br><br>
-
+     <br><br><br>
      <div class="container" align="center">
-     <div class="col-lg-12 col-12" style="padding: 100px">
-          <div class="card mb-3" style="max-width: 800px;">
-               <div class="row g-0">
-                    <div class="col-md-4">
-                         <img src="/resep_images/{{ $resep->images }}" class="img-thumbnail float-left" alt="">
-                    </div>
-                    <div class="col-md-8">
-                         <div class="card-body">
-                         <h5 class="card-title" align="left">Judul: {{ $resep->title }}</h5>
-                              @if ($resep->Category)
-                              <h5 class="card-title" align="left">Kategori: {{ $resep->Category->name }}</h5>
-                              @else
-                              <h5 class="card-title" align="justify">Kategori: Tidak ada kategori</h5>
-                              @endif
-                              <p class="card-text" align="justify">Resep: <br> {{ $resep->resep }}</p>
-
+          <div class="col-lg-12 col-12" style="padding: 100px">
+               <div class="card mb-3" style="max-width: 800px;">
+                    <div class="row g-0">
+                         <div class="col-md-4">
+                              <img src="/resep_images/{{ $resep->images }}" class="img-thumbnail float-left" alt="">
+                         </div>
+                         <div class="col-md-8">
+                              <div class="card-body">
+                                   <h5 class="card-title" align="left">Judul: {{ $resep->title }}</h5>
+                                   @if ($resep->Category)
+                                   <h5 class="card-title" align="left">Kategori: {{ $resep->Category->name }}</h5>
+                                   @else
+                                   <h5 class="card-title" align="justify">Kategori: Tidak ada kategori</h5>
+                                   @endif
+                                   <p class="card-text" align="justify">Resep: <br> {{ $resep->resep }}</p>
+                              </div>
                          </div>
                     </div>
                </div>
+               <div class="d-grid gap-2 d-md-block">
+               <a href="{{ route('resep') }}" class="btn btn-primary btn-md">Back</a>
+                         </div>
           </div>
      </div>
-     </div>
+
      <!-- Navbar -->
      @include('layouts.fe_footer')
      <!-- /.navbar -->
