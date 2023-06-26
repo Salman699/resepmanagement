@@ -8,9 +8,6 @@
     <li class="nav-item d-none d-sm-inline-block">
       <a href="/" class="nav-link text-white">Home</a>
     </li>
-    <li class="nav-item d-none d-sm-inline-block">
-      <a href="#" class="nav-link text-white">Contact</a>
-    </li>
   </ul>
   <!-- Right navbar links -->
   <ul class="navbar-nav ml-auto">

@@ -21,11 +21,12 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item mx-2">
               <a class="nav-link" href="#resep">Resep</a>
             </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            
             <li class="nav-item mx-2">
               <a class="nav-link" href="#maps">Maps</a>
             </li>

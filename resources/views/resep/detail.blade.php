@@ -29,6 +29,7 @@
                                         @else
                                         <h5 class="card-title" align="justify">Kategori: Tidak ada kategori</h5>
                                         @endif
+                                        <h5 align="left">Resep:</h5>
                                         <textarea class="card-text" align="left" cols="40" rows="20" readonly>{{ $resep->resep }}</textarea>
                                    </div>
                               </div>
